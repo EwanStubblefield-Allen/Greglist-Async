@@ -7,18 +7,21 @@ class ObservableAppState extends EventEmitter {
   // SECTION don't touch
   page = ''
   user = null
+
   /** @type {import('./models/Account.js').Account | null} */
   // @ts-ignore
   account = null
+
   /** @type {import('./models/Value.js').Value[]} */
   values = loadState('values', [Value])
   socketData = []
-
 
   // SECTION safe zone
   /** @type {import('./models/Car.js').Car[]} */
   cars = []
 
+  /** @type {import('./models/House.js').House[]} */
+  houses = []
 
   // Used to load initial data
   init() {

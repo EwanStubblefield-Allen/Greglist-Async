@@ -1,17 +1,23 @@
 /* BASIC STYLES HERE */
 
-.car-border{
+.car-border {
   border-width: .2em;
   border-style: solid;
 }
 
-label{
+label {
   display: block;
 }
 
-.creator-picture{
+.creator-picture {
   height: 8vh;
   width: 8vh;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.card-img {
+  object-fit: cover;
+  min-height: 100%;
+  max-height: 30vh;
 }
